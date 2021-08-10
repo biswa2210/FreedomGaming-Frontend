@@ -22,8 +22,12 @@ const OrderCard = (props) => {
   const [statusChange, setStatusChange] = useState();
   const [token, setToken] = useState();
   const [cardColor, setCardColor] = useState();
-
+  const[productName,setProductName]=useState([])
+  const[productBrand,setProductBrand]=useState([])
+  const[productPrice,setProductPrice]=useState([])
   useEffect(() => {
+    getProducts(props);
+
     if (props.editMode) {
       AsyncStorage.getItem("jwt")
         .then((res) => {
@@ -52,6 +56,26 @@ const OrderCard = (props) => {
       setCardColor();
     };
   }, []);
+
+  const getProducts = (x) => {
+    var productsNames=[]
+    var productsBrands=[]
+    var productsPrices=[]
+    axios.get(`${baseURL}orders/${x.id}`).then((data)=>{
+      data.data.orderItems.forEach(element => {
+        productsNames.push(element.product.name)
+        productsBrands.push(element.product.brand)
+        productsPrices.push(element.product.price)
+        if(data.data.orderItems.length==productsNames.length && data.data.orderItems.length==productsPrices.length && 
+          data.data.orderItems.length==productsBrands.length){
+          setProductPrice(productsPrices.join(', Rs: '))
+          setProductName(productsNames.join(',' ))
+          setProductBrand(productsBrands.join(', '))
+        }
+      });
+    })
+  };
+
 
   const updateOrder = () => {
     const config = {
@@ -102,8 +126,12 @@ const OrderCard = (props) => {
 
   return (
     <View style={[{ backgroundColor: cardColor }, styles.container]}>
+
       <View style={styles.container}>
         <Text>Order Number: #{props.id}</Text>
+        <Text>Products : {productName}</Text>
+        <Text>Brands : {productBrand}</Text>
+        <Text>Prices : Rs: {productPrice}</Text>
       </View>
       <View style={{ marginTop: 10 }}>
         <Text>

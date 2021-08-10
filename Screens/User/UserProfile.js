@@ -17,6 +17,7 @@ const UserProfile = (props) => {
     const [userProfile, setUserProfile] = useState()
     const [orders, setOrders] = useState()
 
+
     useFocusEffect(
         useCallback(() => {
         if (
@@ -39,6 +40,7 @@ const UserProfile = (props) => {
         .get(`${baseURL}orders`)
         .then((x) => {
             const data = x.data;
+            
             const userOrders = data.filter(
                 (order) => order.user._id === context.stateUser.user.userId
             );

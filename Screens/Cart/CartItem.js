@@ -9,8 +9,7 @@ import {
     Body
 } from 'native-base';
 const CartItem = (props) => {
-    const data=props.item.item
-    const [quantity,setQuantity] = useState(props.item.item.quantity)
+    const data=props.item.item;
     return (
         <ListItem
             style={styles.listitem}

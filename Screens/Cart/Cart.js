@@ -37,6 +37,9 @@ const Cart = (props) => {
       setTotalPrice()
     }
   }, [props])
+
+
+
   
     const getProducts = () => {
       var products = [];

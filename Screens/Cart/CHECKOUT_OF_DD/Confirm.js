@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useCallback } from "react";
 import { View, StyleSheet, Dimensions, ScrollView, Button } from "react-native";
 import { Text, Left, Right, ListItem, Thumbnail, Body } from "native-base";
 import { connect } from "react-redux";
@@ -6,19 +6,25 @@ import * as actions from "../../../ReduxDev/Actions/cartActionsForDD";
 import axios from "axios";
 import Toast from "react-native-toast-message";
 import baseURL from "../../../assets/common/baseUrl";
+import { useFocusEffect } from "@react-navigation/native"
 var {height,width} = Dimensions.get('window')
 const confirm = (props) => {
     const finalOrder = props.route.params;
      // Add this
-  const [productUpdate, setProductUpdate] = useState();
-  useEffect(() => {
+  const [productUpdate, setProductUpdate] = useState([]);
+  useFocusEffect(
+    useCallback(() => {
       if(finalOrder) {
         getProducts(finalOrder);
       }
-    return () => {
-      setProductUpdate();
-    };
-  }, [props]);
+    else{
+      console.log(finalOrder)
+      return () => {
+        setProductUpdate([]);
+      };
+    }
+   
+  }, [props]));
  
   // Add this
   const getProducts = (x) => {
@@ -30,12 +36,16 @@ const confirm = (props) => {
               .get(`${baseURL}products/${cart.product}`)
               .then((data) => {
                 products.push(data.data);
-                setProductUpdate(products);
+                if(order.orderItems.length==products.length){
+                  setProductUpdate(products);
+                }
+                
               })
               .catch((e) => {
                 console.log(e);
               });
           });
+        
     }
   };
 
@@ -125,8 +135,8 @@ const mapDispatchToProps = (dispatch) => {
   
 const styles = StyleSheet.create({
     container: {
-      height: height,
-      padding: 8,
+      height: height+100,
+      padding: 5,
       alignContent: "center",
       backgroundColor: "white",
     },
