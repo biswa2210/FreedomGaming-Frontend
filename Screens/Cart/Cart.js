@@ -19,8 +19,10 @@ import * as actions from '../../ReduxDev/Actions/cartActionsForDD';
 import { SwipeListView } from 'react-native-swipe-list-view';
 import axios from 'axios';
 import baseURL from '../../assets/common/baseUrl';
+import Header from '../../Shared/Header';
 import CartItem from './CartItem';
 import cartItems from '../../ReduxDev/ReducersForDD/cartItem';
+import { Fragment } from 'react';
 var {height,width} =Dimensions.get('window');
 const Cart = (props) => {
 
@@ -59,7 +61,8 @@ const Cart = (props) => {
       })
     }
     return (
-        <>
+      <Fragment>
+          <Header></Header>
         {productUpdate ? (
           <Container>
             <H1 style={{ alignSelf: "center" }}>Cart</H1>
@@ -127,7 +130,9 @@ const Cart = (props) => {
             <Text>Add products to your cart to get started</Text>
           </Container>
         )}
-      </>
+     
+      </Fragment>
+     
     );
 }
 const mapToStateProps = (state) =>{

@@ -8,13 +8,12 @@ const Banner = () => {
 
   useEffect(() => {
     setBannerData([
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/banner1.png?alt=media&token=c8ac8df5-c929-4079-9a4b-ad50ac805ce5",
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/ghee-top-banner.jpg?alt=media&token=4f875ed2-b4bd-4694-aa05-9f0a806b49f5",
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/ashirbadBanner.jpg?alt=media&token=e4dd1f30-aa28-4329-80c7-f2f4370f0db1",
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/parasBanner.jpg?alt=media&token=35d36877-efaf-4899-a17f-8062ee1ebf9f",
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/saffolabanner.jpg?alt=media&token=40983e59-864a-4951-877c-87022ccf02ea",
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/PatanjaliBannar.jpg?alt=media&token=7fa91b87-efc0-4019-8b7d-133bb2d03ed2",
-      "https://firebasestorage.googleapis.com/v0/b/daily-deals-images-bucket.appspot.com/o/saltbanner.jpg?alt=media&token=6dab25b7-4e30-4437-9960-4f032bdb3ec1"
+      "https://firebasestorage.googleapis.com/v0/b/fg-images-bucket.appspot.com/o/banner1-cyberpunk.png?alt=media&token=19ad1632-7d85-402a-a3cb-a99b8d7db30a",
+      "https://firebasestorage.googleapis.com/v0/b/fg-images-bucket.appspot.com/o/banner2-playstation5.png?alt=media&token=d2fd8703-6d40-43f6-8572-ff45c5a21a6a",
+      "https://firebasestorage.googleapis.com/v0/b/fg-images-bucket.appspot.com/o/banner3-gamecommingsoon.png?alt=media&token=6f0236fa-3a5e-40a2-8fe6-19cf25a25180",
+      "https://firebasestorage.googleapis.com/v0/b/fg-images-bucket.appspot.com/o/banner4-gpu.jpeg?alt=media&token=475b1cda-2602-4783-b54e-71b4112746d5",
+      "https://firebasestorage.googleapis.com/v0/b/fg-images-bucket.appspot.com/o/banner5-godofwar.jpg?alt=media&token=bd1c2ad2-92db-4054-a577-7b78f3d335d8",
+      "https://firebasestorage.googleapis.com/v0/b/fg-images-bucket.appspot.com/o/banner6-Far-Cry-6-.jpg?alt=media&token=9c54b87f-13a1-4e53-b9f7-da71048ea3b9",
 
     ]);
 

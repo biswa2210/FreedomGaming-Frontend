@@ -4,13 +4,14 @@ import { Container } from "native-base"
 import { useFocusEffect } from "@react-navigation/native"
 import AsyncStorage from "@react-native-community/async-storage"
 import OrderCard from "../../Shared/OrderCardDD"
-
+import Header from '../../Shared/Header';
 import axios from "axios"
 import baseURL from "../../assets/common/baseUrl"
 
 import AuthGlobal from '../../ContextApi/Store/AuthGlobal';
 import { logoutUser } from "../../ContextApi/Actions/Auth.actions"
 import { useEffect } from 'react/cjs/react.development';
+import { Fragment } from 'react';
 
 const UserProfile = (props) => {
     const context = useContext(AuthGlobal)
@@ -56,9 +57,11 @@ const UserProfile = (props) => {
     }, [context.stateUser.isAuthenticated]))
 
     return (
-       <Container style={styles.container}>
+        <Fragment>
+            <Header></Header>
+            <Container style={styles.container}>
            <ScrollView contentContainerStyle={styles.subContainer}>
-               <Text style={{ fontSize: 30 }}>
+               <Text style={{ fontSize: 30, margin: 8 }}>
                    {userProfile ? userProfile.name : "" }
                </Text>
                <View style={{ marginTop: 20 }}>
@@ -91,6 +94,8 @@ const UserProfile = (props) => {
                </View>
            </ScrollView>
        </Container>
+        </Fragment>
+       
     )
 }
 

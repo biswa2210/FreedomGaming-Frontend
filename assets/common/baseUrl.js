@@ -1,7 +1,7 @@
 import { Platform } from 'react-native'
 
 
-let baseURL = 'https://daily-deals-server-biswa2210.herokuapp.com/api/v1/';
+let baseURL = 'https://freedom-gaming-ipa.herokuapp.com/api/v1/';
 
 /*
 {Platform.OS == 'android'

@@ -10,8 +10,6 @@ import Toast from 'react-native-toast-message';
 import Auth from './ContextApi/Store/Auth';
 
 
-//Start - Screens--------------------------------------------------------------------->DailyDeals
-import Header from './Shared/Header';
 //End - Screens----------------------------------------------------------------------->DailyDeals
 //Start - Navigations----------------------------------------------------------------->DailyDeals
 import Main from './Navigators/Main';
@@ -22,7 +20,6 @@ export default function App() {
     <Auth>
       <Provider store={DDSTORE}>
         <NavigationContainer>
-          <Header />
           <Main />
           <Toast ref={(ref) => Toast.setRef(ref)} />
         </NavigationContainer>
