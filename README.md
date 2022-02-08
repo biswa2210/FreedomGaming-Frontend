@@ -170,7 +170,8 @@ For admin users this following part is additional
 <a href="pics/d15.jpeg"><img src="pics/d15.jpeg" width="250" height= "450"></a> <a href="pics/d16.jpeg"><img src="pics/d16.jpeg" width="250" height= "450"></a> <a href="pics/d17.jpeg"><img src="pics/d17.jpeg" width="250" height= "450"></a>
        
 <a href="pics/d18.jpeg"><img src="pics/d18.jpeg" width="250" height= "450"></a> <a href="pics/d19.jpeg"><img src="pics/d19.jpeg" width="250" height= "450"></a> <a href="pics/d20.jpeg"><img src="pics/d20.jpeg" width="250" height= "450"></a>
-      
+  
+<a href="pics/d21.jpeg"><img src="pics/d21.jpeg" width="250" height= "450"></a> <a href="pics/d22.jpeg"><img src="pics/d22.jpeg" width="250" height= "450"></a> <a href="pics/d23.jpeg"><img src="pics/d23.jpeg" width="250" height= "450"></a>
 </div>
 
 
