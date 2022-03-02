@@ -40,7 +40,7 @@ https://github.com/biswa2210/FreedomGaming-Backend
  - [x] 'Products'<br>
  - [x] 'Orders'<br>
        
-## APP DOWNLOAD LINK : :point_right: <a href="https://drive.google.com/file/d/1F91JgwaQmm6BjiWpNn2dBl-h8HRl6icx/view" download>Click here to download</a>
+## APP DOWNLOAD LINK : :point_right: <a href="https://drive.google.com/file/d/1YW8-7PBN3JNt9q65T0IrG3ZOp2lK8tKv/view" download>Click here to download</a>
 
 ## Purpose :point_down:
 
