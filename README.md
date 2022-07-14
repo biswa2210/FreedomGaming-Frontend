@@ -39,7 +39,11 @@ https://github.com/biswa2210/FreedomGaming-Backend
  - [x] 'Categories'<br>
  - [x] 'Products'<br>
  - [x] 'Orders'<br>
-       
+
+## FREEDOM GAMING DEMO VIDEO: :point_right: <a href="https://www.youtube.com/watch?v=ArNDh90fKiA&list=PL0lbDlMJ1h4i5ey2G0lLtoh6yVbDkVMGQ&index=1">Click here to watch</a>
+
+## REACT NATIVE APPS PLAYLIST: :point_right: <a href="https://www.youtube.com/playlist?list=PL0lbDlMJ1h4i5ey2G0lLtoh6yVbDkVMGQ">Click here to watch</a>
+
 ## APP DOWNLOAD LINK : :point_right: <a href="https://drive.google.com/file/d/1YW8-7PBN3JNt9q65T0IrG3ZOp2lK8tKv/view" download>Click here to download</a>
 
 ## Purpose :point_down:
